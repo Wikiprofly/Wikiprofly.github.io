@@ -3,17 +3,45 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015 | 阿希</title>
+  <title>CSS中的特殊性 | 阿希</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="阿希的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿希">
-<meta property="og:url" content="http://yoursite.com/archives/2015/index.html">
+  <meta name="description" content="CSS中的特殊性匹配到同一个元素上的不同的规则，按照特殊性高的为准
+特殊性的确定方式：
+
+内联样式的的特殊性为1,0,0,0.
+选择器中每包含一个ID属性值，加 0,1,0,0.
+选择器中每包含一个类属性值，属性选择或者伪类，加 0,0,1,0.
+选择器中每包含一个元素值和伪元素值，加0,0,0,1.
+结合符和通配符特殊性为0,0,0,0
+
+第一位数字 &amp;gt; 第二位数字 &amp;gt; 第三位数字">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS中的特殊性">
+<meta property="og:url" content="http://yoursite.com/2015/10/18/css-specificity/index.html">
 <meta property="og:site_name" content="阿希">
-<meta property="og:description" content="阿希的博客">
+<meta property="og:description" content="CSS中的特殊性匹配到同一个元素上的不同的规则，按照特殊性高的为准
+特殊性的确定方式：
+
+内联样式的的特殊性为1,0,0,0.
+选择器中每包含一个ID属性值，加 0,1,0,0.
+选择器中每包含一个类属性值，属性选择或者伪类，加 0,0,1,0.
+选择器中每包含一个元素值和伪元素值，加0,0,0,1.
+结合符和通配符特殊性为0,0,0,0
+
+第一位数字 &amp;gt; 第二位数字 &amp;gt; 第三位数字">
+<meta property="og:updated_time" content="2015-10-18T10:48:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿希">
-<meta name="twitter:description" content="阿希的博客">
+<meta name="twitter:title" content="CSS中的特殊性">
+<meta name="twitter:description" content="CSS中的特殊性匹配到同一个元素上的不同的规则，按照特殊性高的为准
+特殊性的确定方式：
+
+内联样式的的特殊性为1,0,0,0.
+选择器中每包含一个ID属性值，加 0,1,0,0.
+选择器中每包含一个类属性值，属性选择或者伪类，加 0,0,1,0.
+选择器中每包含一个元素值和伪元素值，加0,0,0,1.
+结合符和通配符特殊性为0,0,0,0
+
+第一位数字 &amp;gt; 第二位数字 &amp;gt; 第三位数字">
   
     <link rel="alternative" href="/atom.xml" title="阿希" type="application/atom+xml">
   
@@ -63,77 +91,65 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/10/18/css-specificity/" class="archive-article-date">
-  <time datetime="2015-10-18T09:27:20.000Z" itemprop="datePublished">10月 18</time>
+        <section id="main"><article id="post-css-specificity" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/18/css-specificity/" class="article-date">
+  <time datetime="2015-10-18T09:27:20.000Z" itemprop="datePublished">2015-10-18</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/18/css-specificity/">CSS中的特殊性</a>
+    <h1 class="article-title" itemprop="name">
+      CSS中的特殊性
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/10/18/css-cascading/" class="archive-article-date">
-  <time datetime="2015-10-18T08:38:51.000Z" itemprop="datePublished">10月 18</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/18/css-cascading/">CSS中的层叠</a>
-    </h1>
-  
+        <h2 id="CSS中的特殊性">CSS中的特殊性</h2><p>匹配到同一个元素上的不同的规则，按照特殊性高的为准</p>
+<p>特殊性的确定方式：</p>
+<ul>
+<li>内联样式的的特殊性为1,0,0,0.</li>
+<li>选择器中每包含一个ID属性值，加 0,1,0,0.</li>
+<li>选择器中每包含一个类属性值，属性选择或者伪类，加 0,0,1,0.</li>
+<li>选择器中每包含一个元素值和伪元素值，加0,0,0,1.</li>
+<li>结合符和通配符特殊性为0,0,0,0</li>
+</ul>
+<p>第一位数字 &gt; 第二位数字 &gt; 第三位数字 &gt; 第四位数字，即，只要前面有数字，不论后面多大，都是前面有数字的特殊性大</p>
+<p>例: 0,1,0,0 &gt; 0,0,16,0</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/10/18/css-inherit/" class="archive-article-date">
-  <time datetime="2015-10-18T04:38:47.000Z" itemprop="datePublished">10月 18</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/18/css-inherit/">CSS中的继承</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/10/18/css-specificity/" data-id="cifwe7ozw00032qhctr7je0d8" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/10/18/css-cascading/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CSS中的层叠</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
 </section>
         
           <aside id="sidebar">

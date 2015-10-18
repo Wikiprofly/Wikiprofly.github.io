@@ -3,17 +3,39 @@
 <head>
   <meta charset="utf-8">
   
-  <title>阿希</title>
+  <title>CSS中的层叠 | 阿希</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="阿希的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿希">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="层叠规则用来解决当一个元素匹配到多个样式时应该选择哪一个的问题
+CSS2.1的层叠规则
+
+找出所有匹配到该元素的样式
+分两组：第一组：重要（!important）样式，第二组：普通样式
+重要样式 &amp;gt; 普通样式
+重要样式和普通样式遵循同一套特殊性规则（特殊性规则见CSS中的特殊性），以特殊性高的为准，先解决重要样式，再解决普通样式
+出现在后面的样式权重高于出现在前面的样式，导入的样式表里的样式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS中的层叠">
+<meta property="og:url" content="http://yoursite.com/2015/10/18/css-cascading/index.html">
 <meta property="og:site_name" content="阿希">
-<meta property="og:description" content="阿希的博客">
+<meta property="og:description" content="层叠规则用来解决当一个元素匹配到多个样式时应该选择哪一个的问题
+CSS2.1的层叠规则
+
+找出所有匹配到该元素的样式
+分两组：第一组：重要（!important）样式，第二组：普通样式
+重要样式 &amp;gt; 普通样式
+重要样式和普通样式遵循同一套特殊性规则（特殊性规则见CSS中的特殊性），以特殊性高的为准，先解决重要样式，再解决普通样式
+出现在后面的样式权重高于出现在前面的样式，导入的样式表里的样式">
+<meta property="og:updated_time" content="2015-10-18T10:47:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿希">
-<meta name="twitter:description" content="阿希的博客">
+<meta name="twitter:title" content="CSS中的层叠">
+<meta name="twitter:description" content="层叠规则用来解决当一个元素匹配到多个样式时应该选择哪一个的问题
+CSS2.1的层叠规则
+
+找出所有匹配到该元素的样式
+分两组：第一组：重要（!important）样式，第二组：普通样式
+重要样式 &amp;gt; 普通样式
+重要样式和普通样式遵循同一套特殊性规则（特殊性规则见CSS中的特殊性），以特殊性高的为准，先解决重要样式，再解决普通样式
+出现在后面的样式权重高于出现在前面的样式，导入的样式表里的样式">
   
     <link rel="alternative" href="/atom.xml" title="阿希" type="application/atom+xml">
   
@@ -63,58 +85,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-css-specificity" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/18/css-specificity/" class="article-date">
-  <time datetime="2015-10-18T09:27:20.000Z" itemprop="datePublished">2015-10-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/18/css-specificity/">CSS中的特殊性</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="CSS中的特殊性">CSS中的特殊性</h2><p>匹配到同一个元素上的不同的规则，按照特殊性高的为准</p>
-<p>特殊性的确定方式：</p>
-<ul>
-<li>内联样式的的特殊性为1,0,0,0.</li>
-<li>选择器中每包含一个ID属性值，加 0,1,0,0.</li>
-<li>选择器中每包含一个类属性值，属性选择或者伪类，加 0,0,1,0.</li>
-<li>选择器中每包含一个元素值和伪元素值，加0,0,0,1.</li>
-<li>结合符和通配符特殊性为0,0,0,0</li>
-</ul>
-<p>第一位数字 &gt; 第二位数字 &gt; 第三位数字 &gt; 第四位数字，即，只要前面有数字，不论后面多大，都是前面有数字的特殊性大</p>
-<p>例: 0,1,0,0 &gt; 0,0,16,0</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/10/18/css-specificity/" data-id="cifwe7ozw00032qhctr7je0d8" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-css-cascading" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-css-cascading" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/10/18/css-cascading/" class="article-date">
   <time datetime="2015-10-18T08:38:51.000Z" itemprop="datePublished">2015-10-18</time>
@@ -127,8 +98,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/18/css-cascading/">CSS中的层叠</a>
+    <h1 class="article-title" itemprop="name">
+      CSS中的层叠
     </h1>
   
 
@@ -211,57 +182,29 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-css-inherit" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/18/css-inherit/" class="article-date">
-  <time datetime="2015-10-18T04:38:47.000Z" itemprop="datePublished">2015-10-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2015/10/18/css-specificity/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          CSS中的特殊性
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/18/css-inherit/">CSS中的继承</a>
-    </h1>
   
+    <a href="/2015/10/18/css-inherit/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">CSS中的继承</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="继承">继承</h2><p>基于继承机制，样式不仅可以应用到指定的元素，还会应用到它的后代元素</p>
-<p>例如：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">h1</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">color</span>:<span class="value"> grey</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Meerkat</span><br><span class="line">    <span class="tag">&lt;<span class="title">em</span>&gt;</span>Central<span class="tag">&lt;/<span class="title">em</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>结果<code>&lt;em&gt;</code>中的内容也会是<code>color:grey</code>颜色的</p>
-<ul>
-<li>大多数框模型属性（外边距，内边距，背景和边框）都不能继承</li>
-<li>继承是<strong>无特殊性的</strong>，会被通配符＊覆盖</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/10/18/css-inherit/" data-id="cifwe7p0400052qhcftqt2ebs" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
-
-  
-  
 </section>
         
           <aside id="sidebar">

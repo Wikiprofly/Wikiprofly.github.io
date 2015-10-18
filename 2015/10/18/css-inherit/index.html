@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>CSS中的继承 | 阿希</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="继承基于继承机制，样式不仅可以应用到指定的元素，还会应用到它的后代元素
+例如：123h1 &amp;#123;    color: grey;&amp;#125;
+123&amp;lt;h1&amp;gt;Meerkat    &amp;lt;em&amp;gt;Central&amp;lt;/em&amp;gt;&amp;lt;/h1&amp;gt;
+结果&amp;lt;em&amp;gt;中的内容也会是color:grey颜色的
+
+大多数框模型属性（外边距，内边距，背景和边框）都不能继承">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS中的继承">
+<meta property="og:url" content="http://yoursite.com/2015/10/18/css-inherit/index.html">
+<meta property="og:site_name" content="阿希">
+<meta property="og:description" content="继承基于继承机制，样式不仅可以应用到指定的元素，还会应用到它的后代元素
+例如：123h1 &amp;#123;    color: grey;&amp;#125;
+123&amp;lt;h1&amp;gt;Meerkat    &amp;lt;em&amp;gt;Central&amp;lt;/em&amp;gt;&amp;lt;/h1&amp;gt;
+结果&amp;lt;em&amp;gt;中的内容也会是color:grey颜色的
+
+大多数框模型属性（外边距，内边距，背景和边框）都不能继承">
+<meta property="og:updated_time" content="2015-10-18T10:49:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS中的继承">
+<meta name="twitter:description" content="继承基于继承机制，样式不仅可以应用到指定的元素，还会应用到它的后代元素
+例如：123h1 &amp;#123;    color: grey;&amp;#125;
+123&amp;lt;h1&amp;gt;Meerkat    &amp;lt;em&amp;gt;Central&amp;lt;/em&amp;gt;&amp;lt;/h1&amp;gt;
+结果&amp;lt;em&amp;gt;中的内容也会是color:grey颜色的
+
+大多数框模型属性（外边距，内边距，背景和边框）都不能继承">
+  
+    <link rel="alternative" href="/atom.xml" title="阿希" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">阿希</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">阿希不是阿西吧</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-css-inherit" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/18/css-inherit/" class="article-date">
+  <time datetime="2015-10-18T04:38:47.000Z" itemprop="datePublished">2015-10-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CSS中的继承
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="继承">继承</h2><p>基于继承机制，样式不仅可以应用到指定的元素，还会应用到它的后代元素</p>
+<p>例如：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">h1</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">color</span>:<span class="value"> grey</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">h1</span>&gt;</span>Meerkat</span><br><span class="line">    <span class="tag">&lt;<span class="title">em</span>&gt;</span>Central<span class="tag">&lt;/<span class="title">em</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">h1</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>结果<code>&lt;em&gt;</code>中的内容也会是<code>color:grey</code>颜色的</p>
+<ul>
+<li>大多数框模型属性（外边距，内边距，背景和边框）都不能继承</li>
+<li>继承是<strong>无特殊性的</strong>，会被通配符＊覆盖</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/10/18/css-inherit/" data-id="cifwe7p0400052qhcftqt2ebs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS/">CSS</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/10/18/css-cascading/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          CSS中的层叠
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CSS/" style="font-size: 10px;">CSS</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">十月 2015</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/10/18/css-specificity/">CSS中的特殊性</a>
+          </li>
+        
+          <li>
+            <a href="/2015/10/18/css-cascading/">CSS中的层叠</a>
+          </li>
+        
+          <li>
+            <a href="/2015/10/18/css-inherit/">CSS中的继承</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 阿希<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
